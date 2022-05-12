@@ -49,6 +49,8 @@ source .devops/bin/activate
 * Create Flask app in Container
 * Run via kubectl
 
+# Other Notes
+
 ### Tech Stack
 
 * AWS
