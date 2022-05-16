@@ -23,3 +23,6 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 kubectl port-forward pod/$TAG_ID --address 127.0.0.1 8080:80
+
+# Log Output
+kubectl logs $TAG_ID $TAG_ID
