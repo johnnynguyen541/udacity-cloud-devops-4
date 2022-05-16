@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![<CircleCI>](https://circleci.com/gh/johnnynguyen541/udacity-cloud-devops-4.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
 ## Project Overview
 
@@ -16,10 +16,6 @@ Your project goal is to operationalize this working, machine learning microservi
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
-
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
-
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
 ---
 
@@ -56,3 +52,22 @@ source .devops/bin/activate
 * Docker
 * Kubernetes
 * Python
+
+---
+
+## Project Files
+
+Files | Description
+----- | -----
+`app.py` | Python application
+`Dockerfile` | Docker Build File
+`LICENSE.md `| License for Project
+`make_prediction.sh` | Curl request to port to make prediction
+`Makefile` | Make file with steps setup, install, test, and lint
+`model_data/` | Directory with model data
+`output_txt_files/` | Directory containing project output logs `docker_out.txt` and `kubernetes_out.txt`
+`README.md` | Project README file
+`requirements.txt` | Python Library requirements file
+`run_docker.sh` | Shell Script to create Docker Image/Run Container
+`run_kubernetes.sh` | Shell Script to run Kubernetes Pod
+`upload_docker.sh` | Shell Script to upload Docker Image to Docker Hub

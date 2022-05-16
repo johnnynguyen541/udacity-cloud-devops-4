@@ -1,1 +1,14 @@
-<paste log output from Kubernetes-mediated prediction, here>
+$ ./run_kubernetes.sh 
+pod/sklearn-api created
+NAME          READY   STATUS              RESTARTS   AGE
+sklearn-api   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "sklearn-api" already exists
+NAME          READY   STATUS    RESTARTS   AGE
+sklearn-api   1/1     Running   0          12s
+Forwarding from 127.0.0.1:8080 -> 80
+
+# HTTP POST REQUEST
+Handling connection for 8080
